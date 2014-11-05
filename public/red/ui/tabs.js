@@ -118,7 +118,7 @@ RED.tabs = (function() {
                 return ul.find("a[href='#"+id+"']").length > 0;
             },
             renameTab: function(id,name) {
-                tabs[id].name = name;
+                tabs[id].label = name;
                 var tab = ul.find("a[href='#"+id+"']");
                 tab.attr("title",name);
                 tab.text(name);
